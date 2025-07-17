@@ -2,6 +2,7 @@ package com.simplebrowser.app;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
@@ -19,19 +20,26 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 public class MainActivity extends AppCompatActivity {
     private WebView webView;
     private EditText urlEditText;
-    private ImageButton backButton, forwardButton, refreshButton, homeButton, menuButton;
+    private ImageButton backButton, forwardButton, refreshButton, homeButton, menuButton, settingsButton;
     private ProgressBar progressBar;
     private SwipeRefreshLayout swipeRefreshLayout;
     private View navigationMenu;
     private boolean isMenuVisible = false;
+    private SharedPreferences sharedPreferences;
     
-    private static final String HOME_URL = "https://www.google.com";
+    private String homeUrl = "https://www.google.com";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        
+        // Load settings and apply theme
+        sharedPreferences = getSharedPreferences("BrowserSettings", MODE_PRIVATE);
+        applyColorTheme();
+        
         setContentView(R.layout.activity_main);
         
+        loadSettings();
         initializeViews();
         setupWebView();
         setupButtons();
@@ -46,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
         refreshButton = findViewById(R.id.refresh_button);
         homeButton = findViewById(R.id.home_button);
         menuButton = findViewById(R.id.menu_button);
+        settingsButton = findViewById(R.id.settings_button);
         progressBar = findViewById(R.id.progress_bar);
         swipeRefreshLayout = findViewById(R.id.swipe_refresh);
         navigationMenu = findViewById(R.id.navigation_menu);
@@ -91,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
         });
         
         // Load home page
-        webView.loadUrl(HOME_URL);
+        webView.loadUrl(homeUrl);
     }
     
     private void setupButtons() {
@@ -117,8 +126,14 @@ public class MainActivity extends AppCompatActivity {
         });
         
         homeButton.setOnClickListener(v -> {
-            webView.loadUrl(HOME_URL);
-            urlEditText.setText(HOME_URL);
+            webView.loadUrl(homeUrl);
+            urlEditText.setText(homeUrl);
+            hideNavigationMenu();
+        });
+        
+        settingsButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
+            startActivity(intent);
             hideNavigationMenu();
         });
         
@@ -200,5 +215,41 @@ public class MainActivity extends AppCompatActivity {
     private void hideNavigationMenu() {
         navigationMenu.setVisibility(View.GONE);
         isMenuVisible = false;
+    }
+    
+    private void loadSettings() {
+        homeUrl = sharedPreferences.getString("homepage_url", "https://www.google.com");
+    }
+    
+    @Override
+    protected void onResume() {
+        super.onResume();
+        // Reload settings when returning from settings activity
+        loadSettings();
+    }
+    
+    private void applyColorTheme() {
+        String theme = sharedPreferences.getString("color_theme", "Blue (Default)");
+        
+        switch (theme) {
+            case "Green":
+                setTheme(R.style.Theme_SimpleBrowser_Green);
+                break;
+            case "Purple":
+                setTheme(R.style.Theme_SimpleBrowser_Purple);
+                break;
+            case "Orange":
+                setTheme(R.style.Theme_SimpleBrowser_Orange);
+                break;
+            case "Red":
+                setTheme(R.style.Theme_SimpleBrowser_Red);
+                break;
+            case "Dark":
+                setTheme(R.style.Theme_SimpleBrowser_Dark);
+                break;
+            default:
+                setTheme(R.style.Theme_SimpleBrowser);
+                break;
+        }
     }
 }

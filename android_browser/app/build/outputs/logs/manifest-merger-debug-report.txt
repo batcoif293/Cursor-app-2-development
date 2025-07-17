@@ -1,13 +1,14 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /workspace/android_browser/app/src/main/AndroidManifest.xml:2:1-33:12
-INJECTED from /workspace/android_browser/app/src/main/AndroidManifest.xml:2:1-33:12
-INJECTED from /workspace/android_browser/app/src/main/AndroidManifest.xml:2:1-33:12
-INJECTED from /workspace/android_browser/app/src/main/AndroidManifest.xml:2:1-33:12
+ADDED from /workspace/android_browser/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /workspace/android_browser/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /workspace/android_browser/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /workspace/android_browser/app/src/main/AndroidManifest.xml:2:1-40:12
 MERGED from [com.google.android.material:material:1.4.0] /home/ubuntu/.gradle/caches/transforms-3/d926933913700fd5abcc4b8509c60142/transformed/material-1.4.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] /home/ubuntu/.gradle/caches/transforms-3/03ca01a00703a3c302f3547a5fd7eea1/transformed/constraintlayout-2.1.0/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.3.1] /home/ubuntu/.gradle/caches/transforms-3/6a42b24427261d635bbc21a84f5e043b/transformed/appcompat-1.3.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /home/ubuntu/.gradle/caches/transforms-3/37f6b4ca2d1a91c9d8d2e3d3213fc578/transformed/swiperefreshlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] /home/ubuntu/.gradle/caches/transforms-3/04982dfa78b345590af07a01319f4e04/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/ubuntu/.gradle/caches/transforms-3/d8cf3e7700c62293cd8bff1db0ea1203/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment:1.3.6] /home/ubuntu/.gradle/caches/transforms-3/b4d6351b0ffb103a9b1cd1c2bcdce657/transformed/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity:1.2.4] /home/ubuntu/.gradle/caches/transforms-3/53eb5fc46aff6ed0097d7156937dab81/transformed/jetified-activity-1.2.4/AndroidManifest.xml:17:1-24:12
@@ -29,7 +30,6 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /home/ubun
 MERGED from [androidx.savedstate:savedstate:1.1.0] /home/ubuntu/.gradle/caches/transforms-3/13a858d44faf9c93b875bf9a9ee88e03/transformed/jetified-savedstate-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /home/ubuntu/.gradle/caches/transforms-3/e753fb15fcbf4e670af6d499fa387b4d/transformed/lifecycle-runtime-2.3.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /home/ubuntu/.gradle/caches/transforms-3/c3a20741bed3135d99b45edfd4fe3c68/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.cardview:cardview:1.0.0] /home/ubuntu/.gradle/caches/transforms-3/04982dfa78b345590af07a01319f4e04/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /home/ubuntu/.gradle/caches/transforms-3/dcb99d9e0ed4bd13553d2eef8b044143/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/ubuntu/.gradle/caches/transforms-3/78c62fc5998d1bed28640af0bce4b2e9/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.tracing:tracing:1.0.0] /home/ubuntu/.gradle/caches/transforms-3/abb145a799c78bb0146c0387501b767b/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:17:1-24:12
@@ -57,8 +57,8 @@ ADDED from /workspace/android_browser/app/src/main/AndroidManifest.xml:5:5-79
 	android:name
 		ADDED from /workspace/android_browser/app/src/main/AndroidManifest.xml:5:22-76
 application
-ADDED from /workspace/android_browser/app/src/main/AndroidManifest.xml:7:5-32:19
-INJECTED from /workspace/android_browser/app/src/main/AndroidManifest.xml:7:5-32:19
+ADDED from /workspace/android_browser/app/src/main/AndroidManifest.xml:7:5-39:19
+INJECTED from /workspace/android_browser/app/src/main/AndroidManifest.xml:7:5-39:19
 MERGED from [com.google.android.material:material:1.4.0] /home/ubuntu/.gradle/caches/transforms-3/d926933913700fd5abcc4b8509c60142/transformed/material-1.4.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.4.0] /home/ubuntu/.gradle/caches/transforms-3/d926933913700fd5abcc4b8509c60142/transformed/material-1.4.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] /home/ubuntu/.gradle/caches/transforms-3/03ca01a00703a3c302f3547a5fd7eea1/transformed/constraintlayout-2.1.0/AndroidManifest.xml:9:5-20
@@ -119,6 +119,16 @@ data
 ADDED from /workspace/android_browser/app/src/main/AndroidManifest.xml:28:17-47
 	android:scheme
 		ADDED from /workspace/android_browser/app/src/main/AndroidManifest.xml:28:23-44
+activity#com.simplebrowser.app.SettingsActivity
+ADDED from /workspace/android_browser/app/src/main/AndroidManifest.xml:33:9-37:58
+	android:parentActivityName
+		ADDED from /workspace/android_browser/app/src/main/AndroidManifest.xml:36:13-55
+	android:exported
+		ADDED from /workspace/android_browser/app/src/main/AndroidManifest.xml:35:13-37
+	android:theme
+		ADDED from /workspace/android_browser/app/src/main/AndroidManifest.xml:37:13-55
+	android:name
+		ADDED from /workspace/android_browser/app/src/main/AndroidManifest.xml:34:13-45
 uses-sdk
 INJECTED from /workspace/android_browser/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /workspace/android_browser/app/src/main/AndroidManifest.xml
@@ -131,6 +141,8 @@ MERGED from [androidx.appcompat:appcompat:1.3.1] /home/ubuntu/.gradle/caches/tra
 MERGED from [androidx.appcompat:appcompat:1.3.1] /home/ubuntu/.gradle/caches/transforms-3/6a42b24427261d635bbc21a84f5e043b/transformed/appcompat-1.3.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /home/ubuntu/.gradle/caches/transforms-3/37f6b4ca2d1a91c9d8d2e3d3213fc578/transformed/swiperefreshlayout-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /home/ubuntu/.gradle/caches/transforms-3/37f6b4ca2d1a91c9d8d2e3d3213fc578/transformed/swiperefreshlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] /home/ubuntu/.gradle/caches/transforms-3/04982dfa78b345590af07a01319f4e04/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/ubuntu/.gradle/caches/transforms-3/04982dfa78b345590af07a01319f4e04/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/ubuntu/.gradle/caches/transforms-3/d8cf3e7700c62293cd8bff1db0ea1203/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/ubuntu/.gradle/caches/transforms-3/d8cf3e7700c62293cd8bff1db0ea1203/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.3.6] /home/ubuntu/.gradle/caches/transforms-3/b4d6351b0ffb103a9b1cd1c2bcdce657/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
@@ -173,8 +185,6 @@ MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /home/ubuntu/.gradle/ca
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /home/ubuntu/.gradle/caches/transforms-3/e753fb15fcbf4e670af6d499fa387b4d/transformed/lifecycle-runtime-2.3.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /home/ubuntu/.gradle/caches/transforms-3/c3a20741bed3135d99b45edfd4fe3c68/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /home/ubuntu/.gradle/caches/transforms-3/c3a20741bed3135d99b45edfd4fe3c68/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cardview:cardview:1.0.0] /home/ubuntu/.gradle/caches/transforms-3/04982dfa78b345590af07a01319f4e04/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /home/ubuntu/.gradle/caches/transforms-3/04982dfa78b345590af07a01319f4e04/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] /home/ubuntu/.gradle/caches/transforms-3/dcb99d9e0ed4bd13553d2eef8b044143/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] /home/ubuntu/.gradle/caches/transforms-3/dcb99d9e0ed4bd13553d2eef8b044143/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/ubuntu/.gradle/caches/transforms-3/78c62fc5998d1bed28640af0bce4b2e9/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41

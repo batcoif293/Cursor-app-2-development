@@ -16,7 +16,7 @@
 12-->/workspace/android_browser/app/src/main/AndroidManifest.xml:5:22-76
 13
 14    <application
-14-->/workspace/android_browser/app/src/main/AndroidManifest.xml:7:5-32:19
+14-->/workspace/android_browser/app/src/main/AndroidManifest.xml:7:5-39:19
 15        android:allowBackup="true"
 15-->/workspace/android_browser/app/src/main/AndroidManifest.xml:8:9-35
 16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -73,6 +73,16 @@
 41-->/workspace/android_browser/app/src/main/AndroidManifest.xml:28:23-44
 42            </intent-filter>
 43        </activity>
-44    </application>
-45
-46</manifest>
+44        <activity
+44-->/workspace/android_browser/app/src/main/AndroidManifest.xml:33:9-37:58
+45            android:name="com.simplebrowser.app.SettingsActivity"
+45-->/workspace/android_browser/app/src/main/AndroidManifest.xml:34:13-45
+46            android:exported="false"
+46-->/workspace/android_browser/app/src/main/AndroidManifest.xml:35:13-37
+47            android:parentActivityName="com.simplebrowser.app.MainActivity"
+47-->/workspace/android_browser/app/src/main/AndroidManifest.xml:36:13-55
+48            android:theme="@style/Theme.SimpleBrowser" />
+48-->/workspace/android_browser/app/src/main/AndroidManifest.xml:37:13-55
+49    </application>
+50
+51</manifest>

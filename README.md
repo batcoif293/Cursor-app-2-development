@@ -11,15 +11,19 @@ A lightweight, fast, and user-friendly Android internet browser built with moder
 - **Pull-to-Refresh**: Swipe down to refresh the current page
 - **WebView Integration**: Uses Android's built-in WebView for optimal performance
 - **Intent Support**: Can be set as default browser for web links
+- **Customizable Settings**: Change homepage and color themes with local storage
+- **Multiple Themes**: Choose from 6 color themes (Blue, Green, Purple, Orange, Red, Dark)
+- **Homepage Presets**: Quick selection of popular search engines (Google, DuckDuckGo, Bing, Yahoo) or custom URL
 
 ## Screenshots
 
 The browser features:
-- Clean blue navigation toolbar with hamburger menu and URL input field
-- Hidden navigation menu with back, forward, refresh, and home buttons
+- Clean navigation toolbar with hamburger menu and URL input field (color theme customizable)
+- Hidden navigation menu with back, forward, refresh, home, and settings buttons
 - Progress bar showing page loading status
 - Full-screen web content area for maximum browsing space
 - Swipe-to-refresh functionality
+- Settings screen with homepage and theme customization options
 
 ## Installation
 
@@ -59,8 +63,22 @@ adb install SimpleBrowser.apk
 - **Back Button**: Navigate to previous page (disabled when no history)
 - **Forward Button**: Navigate to next page (disabled when no forward history)
 - **Refresh Button**: Reload current page
-- **Home Button**: Navigate to Google homepage
+- **Home Button**: Navigate to your configured homepage
+- **Settings Button**: Access homepage and theme customization options
 - **Clean Interface**: Navigation buttons are hidden by default for a cleaner browsing experience
+
+### Settings & Customization
+- **Homepage Options**: Choose from Google, DuckDuckGo, Bing, Yahoo, or set a custom URL
+- **Color Themes**: Select from 6 beautiful color schemes:
+  - Blue (Default) - Classic blue theme
+  - Green - Nature-inspired green theme
+  - Purple - Modern purple theme  
+  - Orange - Vibrant orange theme
+  - Red - Bold red theme
+  - Dark - Sleek dark theme
+- **Local Storage**: All settings are saved locally on your device
+- **Instant Apply**: Homepage changes take effect immediately
+- **Theme Restart**: Color theme changes require app restart to fully apply
 
 ### Web Standards Support
 - HTML5, CSS3, JavaScript
@@ -122,9 +140,9 @@ Potential features for future versions:
 - Download manager
 - Private browsing mode
 - Multiple tabs support
-- Custom search engines
-- Theme customization
 - History management
+- Advanced security settings
+- Export/import settings
 
 ## License
 

@@ -4,6 +4,10 @@
         "source": "com.simplebrowser.app-main-21:/drawable/ic_arrow_forward.xml"
     },
     {
+        "merged": "com.simplebrowser.app-merged_res-19:/drawable_button_background.xml.flat",
+        "source": "com.simplebrowser.app-main-21:/drawable/button_background.xml"
+    },
+    {
         "merged": "com.simplebrowser.app-merged_res-19:/drawable_ic_home.xml.flat",
         "source": "com.simplebrowser.app-main-21:/drawable/ic_home.xml"
     },
@@ -32,6 +36,10 @@
         "source": "com.simplebrowser.app-main-21:/mipmap-mdpi/ic_launcher.xml"
     },
     {
+        "merged": "com.simplebrowser.app-merged_res-19:/layout_activity_settings.xml.flat",
+        "source": "com.simplebrowser.app-main-21:/layout/activity_settings.xml"
+    },
+    {
         "merged": "com.simplebrowser.app-merged_res-19:/drawable_ic_menu.xml.flat",
         "source": "com.simplebrowser.app-main-21:/drawable/ic_menu.xml"
     },
@@ -44,7 +52,15 @@
         "source": "com.simplebrowser.app-main-21:/mipmap-xxhdpi/ic_launcher.xml"
     },
     {
+        "merged": "com.simplebrowser.app-merged_res-19:/drawable_ic_settings.xml.flat",
+        "source": "com.simplebrowser.app-main-21:/drawable/ic_settings.xml"
+    },
+    {
         "merged": "com.simplebrowser.app-merged_res-19:/drawable_url_bar_background.xml.flat",
         "source": "com.simplebrowser.app-main-21:/drawable/url_bar_background.xml"
+    },
+    {
+        "merged": "com.simplebrowser.app-merged_res-19:/drawable_spinner_background.xml.flat",
+        "source": "com.simplebrowser.app-main-21:/drawable/spinner_background.xml"
     }
 ]

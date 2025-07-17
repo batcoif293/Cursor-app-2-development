@@ -29,5 +29,12 @@
                 <data android:scheme="https" />
             </intent-filter>
         </activity>
+        
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.SimpleBrowser" />
+            
     </application>
 </manifest>

@@ -1776,6 +1776,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable button_background
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -1792,6 +1793,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_refresh
+drawable ic_settings
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -1825,6 +1827,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable spinner_background
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -1952,6 +1955,7 @@ id clip_vertical
 id clockwise
 id closest
 id collapseActionView
+id color_theme_spinner
 id confirm_button
 id constraint
 id container
@@ -1965,6 +1969,7 @@ id counterclockwise
 id currentState
 id custom
 id customPanel
+id custom_homepage_edit_text
 id cut
 id date_picker_actions
 id decelerate
@@ -2035,6 +2040,7 @@ id hideable
 id home
 id homeAsUp
 id home_button
+id homepage_spinner
 id honorRequest
 id horizontal_only
 id icon
@@ -2169,6 +2175,7 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id save_button
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -2192,6 +2199,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id settings_button
 id sharedValueSet
 id sharedValueUnset
 id shortcut
@@ -2270,6 +2278,7 @@ id title
 id titleDividerNoCustom
 id title_template
 id toggle
+id toolbar
 id top
 id topPanel
 id touch_outside
@@ -2373,6 +2382,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_settings
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3036,7 +3046,12 @@ style Theme_MaterialComponents_Light_NoActionBar_Bridge
 style Theme_MaterialComponents_NoActionBar
 style Theme_MaterialComponents_NoActionBar_Bridge
 style Theme_SimpleBrowser
+style Theme_SimpleBrowser_Dark
+style Theme_SimpleBrowser_Green
 style Theme_SimpleBrowser_NoActionBar
+style Theme_SimpleBrowser_Orange
+style Theme_SimpleBrowser_Purple
+style Theme_SimpleBrowser_Red
 style ThemeOverlay_AppCompat
 style ThemeOverlay_AppCompat_ActionBar
 style ThemeOverlay_AppCompat_Dark
