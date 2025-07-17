@@ -1,0 +1,31 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color colorAccent
+color colorPrimary
+color colorPrimaryDark
+color gray_light
+color white
+drawable ic_arrow_back
+drawable ic_arrow_forward
+drawable ic_home
+drawable ic_refresh
+drawable url_bar_background
+id back_button
+id forward_button
+id home_button
+id progress_bar
+id refresh_button
+id swipe_refresh
+id url_edit_text
+id webview
+layout activity_main
+mipmap ic_launcher
+string app_name
+string back
+string forward
+string home
+string refresh
+string url_hint
+style Theme.SimpleBrowser
+style Theme.SimpleBrowser.NoActionBar
