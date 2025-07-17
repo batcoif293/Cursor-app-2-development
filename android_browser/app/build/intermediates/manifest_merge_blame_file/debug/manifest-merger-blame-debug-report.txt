@@ -1,0 +1,88 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.simplebrowser.app"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/workspace/android_browser/app/src/main/AndroidManifest.xml:4:5-67
+11-->/workspace/android_browser/app/src/main/AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->/workspace/android_browser/app/src/main/AndroidManifest.xml:5:5-79
+12-->/workspace/android_browser/app/src/main/AndroidManifest.xml:5:22-76
+13
+14    <application
+14-->/workspace/android_browser/app/src/main/AndroidManifest.xml:7:5-39:19
+15        android:allowBackup="true"
+15-->/workspace/android_browser/app/src/main/AndroidManifest.xml:8:9-35
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.5.0] /home/ubuntu/.gradle/caches/transforms-3/34b941e42264b0fb8a1c31152355f183/transformed/core-1.5.0/AndroidManifest.xml:24:18-86
+17        android:debuggable="true"
+18        android:extractNativeLibs="true"
+19        android:icon="@mipmap/ic_launcher"
+19-->/workspace/android_browser/app/src/main/AndroidManifest.xml:9:9-43
+20        android:label="@string/app_name"
+20-->/workspace/android_browser/app/src/main/AndroidManifest.xml:10:9-41
+21        android:theme="@style/Theme.SimpleBrowser"
+21-->/workspace/android_browser/app/src/main/AndroidManifest.xml:11:9-51
+22        android:usesCleartextTraffic="true" >
+22-->/workspace/android_browser/app/src/main/AndroidManifest.xml:12:9-44
+23        <activity
+23-->/workspace/android_browser/app/src/main/AndroidManifest.xml:14:9-31:20
+24            android:name="com.simplebrowser.app.MainActivity"
+24-->/workspace/android_browser/app/src/main/AndroidManifest.xml:15:13-41
+25            android:exported="true"
+25-->/workspace/android_browser/app/src/main/AndroidManifest.xml:16:13-36
+26            android:theme="@style/Theme.SimpleBrowser.NoActionBar" >
+26-->/workspace/android_browser/app/src/main/AndroidManifest.xml:17:13-67
+27            <intent-filter>
+27-->/workspace/android_browser/app/src/main/AndroidManifest.xml:18:13-21:29
+28                <action android:name="android.intent.action.MAIN" />
+28-->/workspace/android_browser/app/src/main/AndroidManifest.xml:19:17-69
+28-->/workspace/android_browser/app/src/main/AndroidManifest.xml:19:25-66
+29
+30                <category android:name="android.intent.category.LAUNCHER" />
+30-->/workspace/android_browser/app/src/main/AndroidManifest.xml:20:17-77
+30-->/workspace/android_browser/app/src/main/AndroidManifest.xml:20:27-74
+31            </intent-filter>
+32
+33            <!-- Support for web URLs -->
+34            <intent-filter android:autoVerify="true" >
+34-->/workspace/android_browser/app/src/main/AndroidManifest.xml:24:13-30:29
+34-->/workspace/android_browser/app/src/main/AndroidManifest.xml:24:28-53
+35                <action android:name="android.intent.action.VIEW" />
+35-->/workspace/android_browser/app/src/main/AndroidManifest.xml:25:17-69
+35-->/workspace/android_browser/app/src/main/AndroidManifest.xml:25:25-66
+36
+37                <category android:name="android.intent.category.DEFAULT" />
+37-->/workspace/android_browser/app/src/main/AndroidManifest.xml:26:17-76
+37-->/workspace/android_browser/app/src/main/AndroidManifest.xml:26:27-73
+38                <category android:name="android.intent.category.BROWSABLE" />
+38-->/workspace/android_browser/app/src/main/AndroidManifest.xml:27:17-78
+38-->/workspace/android_browser/app/src/main/AndroidManifest.xml:27:27-75
+39
+40                <data android:scheme="http" />
+40-->/workspace/android_browser/app/src/main/AndroidManifest.xml:28:17-47
+40-->/workspace/android_browser/app/src/main/AndroidManifest.xml:28:23-44
+41                <data android:scheme="https" />
+41-->/workspace/android_browser/app/src/main/AndroidManifest.xml:28:17-47
+41-->/workspace/android_browser/app/src/main/AndroidManifest.xml:28:23-44
+42            </intent-filter>
+43        </activity>
+44        <activity
+44-->/workspace/android_browser/app/src/main/AndroidManifest.xml:33:9-37:58
+45            android:name="com.simplebrowser.app.SettingsActivity"
+45-->/workspace/android_browser/app/src/main/AndroidManifest.xml:34:13-45
+46            android:exported="false"
+46-->/workspace/android_browser/app/src/main/AndroidManifest.xml:35:13-37
+47            android:parentActivityName="com.simplebrowser.app.MainActivity"
+47-->/workspace/android_browser/app/src/main/AndroidManifest.xml:36:13-55
+48            android:theme="@style/Theme.SimpleBrowser" />
+48-->/workspace/android_browser/app/src/main/AndroidManifest.xml:37:13-55
+49    </application>
+50
+51</manifest>
