@@ -5,8 +5,8 @@ A lightweight, fast, and user-friendly Android internet browser built with moder
 ## Features
 
 - **Full Web Browsing**: Navigate any website with JavaScript support
-- **Modern UI**: Clean, intuitive interface with Material Design
-- **Navigation Controls**: Back, forward, refresh, and home buttons
+- **Modern UI**: Clean, intuitive interface with Material Design and hamburger menu
+- **Hidden Navigation**: Space-saving design with collapsible navigation controls
 - **Smart URL Bar**: Automatically detects URLs or performs Google search
 - **Pull-to-Refresh**: Swipe down to refresh the current page
 - **WebView Integration**: Uses Android's built-in WebView for optimal performance
@@ -15,10 +15,10 @@ A lightweight, fast, and user-friendly Android internet browser built with moder
 ## Screenshots
 
 The browser features:
-- Blue navigation toolbar with URL input field
-- Navigation buttons (back, forward, refresh, home)
+- Clean blue navigation toolbar with hamburger menu and URL input field
+- Hidden navigation menu with back, forward, refresh, and home buttons
 - Progress bar showing page loading status
-- Full-screen web content area
+- Full-screen web content area for maximum browsing space
 - Swipe-to-refresh functionality
 
 ## Installation
@@ -55,10 +55,12 @@ adb install SimpleBrowser.apk
 - Enter search terms (automatically searches on Google)
 
 ### Navigation
+- **Hamburger Menu**: Tap the menu icon to show/hide navigation controls
 - **Back Button**: Navigate to previous page (disabled when no history)
 - **Forward Button**: Navigate to next page (disabled when no forward history)
 - **Refresh Button**: Reload current page
 - **Home Button**: Navigate to Google homepage
+- **Clean Interface**: Navigation buttons are hidden by default for a cleaner browsing experience
 
 ### Web Standards Support
 - HTML5, CSS3, JavaScript

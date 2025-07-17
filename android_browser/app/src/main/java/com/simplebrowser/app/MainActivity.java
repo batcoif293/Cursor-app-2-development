@@ -19,9 +19,11 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 public class MainActivity extends AppCompatActivity {
     private WebView webView;
     private EditText urlEditText;
-    private ImageButton backButton, forwardButton, refreshButton, homeButton;
+    private ImageButton backButton, forwardButton, refreshButton, homeButton, menuButton;
     private ProgressBar progressBar;
     private SwipeRefreshLayout swipeRefreshLayout;
+    private View navigationMenu;
+    private boolean isMenuVisible = false;
     
     private static final String HOME_URL = "https://www.google.com";
 
@@ -43,8 +45,10 @@ public class MainActivity extends AppCompatActivity {
         forwardButton = findViewById(R.id.forward_button);
         refreshButton = findViewById(R.id.refresh_button);
         homeButton = findViewById(R.id.home_button);
+        menuButton = findViewById(R.id.menu_button);
         progressBar = findViewById(R.id.progress_bar);
         swipeRefreshLayout = findViewById(R.id.swipe_refresh);
+        navigationMenu = findViewById(R.id.navigation_menu);
     }
     
     private void setupWebView() {
@@ -91,28 +95,37 @@ public class MainActivity extends AppCompatActivity {
     }
     
     private void setupButtons() {
+        menuButton.setOnClickListener(v -> toggleNavigationMenu());
+        
         backButton.setOnClickListener(v -> {
             if (webView.canGoBack()) {
                 webView.goBack();
             }
+            hideNavigationMenu();
         });
         
         forwardButton.setOnClickListener(v -> {
             if (webView.canGoForward()) {
                 webView.goForward();
             }
+            hideNavigationMenu();
         });
         
-        refreshButton.setOnClickListener(v -> webView.reload());
+        refreshButton.setOnClickListener(v -> {
+            webView.reload();
+            hideNavigationMenu();
+        });
         
         homeButton.setOnClickListener(v -> {
             webView.loadUrl(HOME_URL);
             urlEditText.setText(HOME_URL);
+            hideNavigationMenu();
         });
         
         urlEditText.setOnKeyListener((v, keyCode, event) -> {
             if (event.getAction() == KeyEvent.ACTION_DOWN && keyCode == KeyEvent.KEYCODE_ENTER) {
                 loadUrl();
+                hideNavigationMenu();
                 return true;
             }
             return false;
@@ -161,10 +174,31 @@ public class MainActivity extends AppCompatActivity {
     
     @Override
     public void onBackPressed() {
-        if (webView.canGoBack()) {
+        if (isMenuVisible) {
+            hideNavigationMenu();
+        } else if (webView.canGoBack()) {
             webView.goBack();
         } else {
             super.onBackPressed();
         }
+    }
+    
+    private void toggleNavigationMenu() {
+        if (isMenuVisible) {
+            hideNavigationMenu();
+        } else {
+            showNavigationMenu();
+        }
+    }
+    
+    private void showNavigationMenu() {
+        navigationMenu.setVisibility(View.VISIBLE);
+        isMenuVisible = true;
+        updateNavigationButtons();
+    }
+    
+    private void hideNavigationMenu() {
+        navigationMenu.setVisibility(View.GONE);
+        isMenuVisible = false;
     }
 }

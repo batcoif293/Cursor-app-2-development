@@ -1149,6 +1149,7 @@ color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
 color gray_light
+color gray_medium
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color material_blue_grey_800
@@ -1785,6 +1786,7 @@ drawable ic_arrow_forward
 drawable ic_clock_black_24dp
 drawable ic_home
 drawable ic_keyboard_black_24dp
+drawable ic_menu
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
@@ -2082,6 +2084,7 @@ id material_timepicker_mode_button
 id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
+id menu_button
 id message
 id middle
 id mini
@@ -2121,6 +2124,7 @@ id navigation_bar_item_labels_group
 id navigation_bar_item_large_label_view
 id navigation_bar_item_small_label_view
 id navigation_header_container
+id navigation_menu
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
