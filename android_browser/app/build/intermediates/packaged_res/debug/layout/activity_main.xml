@@ -35,42 +35,19 @@
             android:background="@drawable/url_bar_background"
             android:hint="Enter URL or search..."
             android:inputType="textUri"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
-            android:paddingTop="12dp"
-            android:paddingBottom="12dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
             android:textSize="16sp"
-            android:textColor="@color/black"
-            android:textColorHint="@color/gray_medium"
+            android:textColor="@android:color/black"
+            android:textColorHint="#888888"
             android:singleLine="true"
             android:imeOptions="actionGo"
-            android:gravity="center_vertical" />
+            android:gravity="center_vertical"
+            android:elevation="1dp" />
 
     </LinearLayout>
-
-    <!-- Progress Bar -->
-    <ProgressBar
-        android:id="@+id/progress_bar"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="match_parent"
-        android:layout_height="3dp"
-        android:max="100"
-        android:visibility="gone"
-        android:progressTint="@color/colorAccent" />
-
-    <!-- WebView with Swipe Refresh -->
-    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-        android:id="@+id/swipe_refresh"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
-
-        <WebView
-            android:id="@+id/webview"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
     <!-- Hidden Navigation Menu -->
     <LinearLayout
@@ -82,7 +59,7 @@
         android:padding="8dp"
         android:gravity="center"
         android:visibility="gone"
-        android:elevation="2dp">
+        android:elevation="4dp">
 
         <ImageButton
             android:id="@+id/back_button"
@@ -131,5 +108,29 @@
             android:tint="@android:color/white" />
 
     </LinearLayout>
+
+    <!-- Progress Bar -->
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:max="100"
+        android:visibility="gone"
+        android:progressTint="@color/colorAccent" />
+
+    <!-- WebView with Swipe Refresh -->
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
 </LinearLayout>
